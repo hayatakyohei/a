@@ -37,7 +37,7 @@ header p{
 
 
 /*メイン*/
-main{
+#product{
     padding:20px 20px 0 20px;
 }
 .explain{
@@ -50,7 +50,7 @@ main img{
     width:100%;
 }
 .product p:nth-child(2){
-    font-size: 20px;
+    font-size: 17px;
     background-color:#E8E8EA;
     padding: 10px;
     width: 70vw;
@@ -59,7 +59,7 @@ main img{
     border-radius:25px;
 }
 .product p:nth-child(3){
-    font-size: 20px;
+    font-size: 17px;
     line-height:1.3em;
     margin-top: 20px;
 }
@@ -68,22 +68,22 @@ main img{
     color:#F18E2C;
 }
 .product h2:nth-child(4){
-    margin-top: 20px;
-    font-size: 30px;
+    margin-top: 25px;
+    font-size: 25px;
 }
 .product h2:nth-child(5){
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 5px;
 }
 .product p:nth-of-type(3){
     color:#F18E2C;
-    font-size: 20px;
+    font-size: 17px;
     line-height:1.3em;
     margin-top: 20px;
 }
 .product p:nth-of-type(4),.product p:nth-of-type(5){
     background-color:rgba(241, 142, 44,0.5);
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 10px;
     padding: 5px 10px;
     border-radius:15px;
@@ -94,11 +94,11 @@ main img{
 }
 .product p:nth-of-type(6),
 .product p:nth-of-type(7){
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 20px;
 }
 .material li,.caution li{
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 10px;
     line-height:1.3em;
 }
@@ -107,27 +107,32 @@ main img{
 }
 #top img{
     width:100%;
+    height:auto;
 }
 #top p:nth-of-type(1),
 #top li{
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 10px;
 }
+#top>p,#top>ul{
+    padding-left: 20px;
+}
 
-/*パララックス*/
+/*ここからパララックス*/
 .title{
     text-align: center;
+    padding-left: 20px;
     transform:translateX(-50px);/* 最初は元の位置より左にずらしておく */
     opacity:0;  /* 最初は非表示にしておく */
     transition:opacity 1s,transform 2s;/* 透明度と位置を設定 */
-background-color:gold;
 }
 .title-explain{
-    text-align: center;
-    transform:translatex(50px);/* 最初は元の位置より左にずらしておく */
+    transform:translatex(50px);/* 最初は元の位置より右にずらしておく */
     opacity:0;  /* 最初は非表示にしておく */
     transition:opacity 1s,transform 2s;/* 透明度と位置を設定 */
-background-color:red;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
 }
 .fadein{
     opacity:1;/* 表示させる */
@@ -137,19 +142,22 @@ background-color:red;
     opacity:1;/* 表示させる */
     transform:translatex(0); /* 位置を最初の位置に戻す */
 }
-
 /*パララックスここまで*/
 
 
-#top h2:nth-of-type(1){
-    font-size: 35px;
+.title h2:first-child{
+    font-size: 25px;
     margin-top: 30px;
+    line-height:1.3em;
+    margin-bottom: 5px;
+    color:#727171;
 }
-#top h2:nth-of-type(2),
-#top h2:nth-of-type(3),
-#top h2:nth-of-type(4){
-    font-size: 35px;
-    margin-top: 5px;
+.title-explain p{
+    font-size: 17px;
+    line-height:1.5em;
+    margin-bottom: 15px;
 }
+
+
 
 
