@@ -107,12 +107,11 @@ main img{
 }
 #top img{
     width:100%;
-    height:auto;
 }
 #top p:nth-of-type(1),
 #top li{
     font-size: 17px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #top>p,#top>ul{
     padding-left: 20px;
@@ -120,23 +119,23 @@ main img{
 
 /*ここからパララックス*/
 .title{
-    text-align: center;
+    margin-top: 60px;
     padding-left: 20px;
     transform:translateX(-50px);/* 最初は元の位置より左にずらしておく */
     opacity:0;  /* 最初は非表示にしておく */
-    transition:opacity 1s,transform 2s;/* 透明度と位置を設定 */
+    transition:opacity 2s,transform 4s;/* 透明度と位置を設定 */
 }
 .title-explain{
+    margin-top: 30px;
     transform:translate(0,0);/* 最初は元の位置より右にずらしておく */
     opacity:0;  /* 最初は非表示にしておく */
-    transition:opacity 1s,transform 2s;/* 透明度と位置を設定 */
+    transition:opacity 2s,transform 4s;/* 透明度と位置を設定 */
     padding-left: 40px; /*右から入る時の画面崩れを防ぐために数値を大きくしている*/
     padding-right: 20px;
-    margin-top: 30px;
 }
 .fadein{
     opacity:1;/* 表示させる */
-    transform:translateX(0); /* 位置を最初の位置に戻す */
+    transform:translateX(-1px); /* 位置を最初の位置に戻す */
 }
 .move{
     opacity:1;/* 表示させる */
@@ -144,20 +143,112 @@ main img{
 }
 /*パララックスここまで*/
 
+.color{
+    height:35px;
+    width: 10px;
+    background-color:#F18E2C;
+    margin-right: 10px;
+}
+.title{
+    display: flex;
+}
+.title h2{
+    font-size: 24px;
+    line-height:1.6em;
 
-.title h2:first-child{
-    font-size: 25px;
-    margin-top: 30px;
-    line-height:1.3em;
-    margin-bottom: 5px;
     color:#727171;
 }
 .title-explain p{
     font-size: 17px;
-    line-height:1.5em;
-    margin-bottom: 15px;
+    line-height:2em;
+    margin-bottom: 40px;
+}
+.timing{
+    display: flex;
+    flex-direction:column;
+    padding-left: 20px;
+}
+.timing li{
+    display: flex;
+    flex-direction:column;
+    padding-left: 20px;
+    margin-top: 0;
+}
+.timing h3{
+    font-size: 24px;
+}
+.last{
+    padding: 20px;
+    border:1px solid #727171;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius:10px;
+}
+.last>p{
+    margin-top: 0!important;
+    font-weight:bold;
+    
 }
 
 
+
+
+
+/*タブレット画面*/
+@media screen and (min-width:768px) { 
+
+    /*ヘッダー*/
+header .container{
+    justify-content:space-around;
+}
+.logo{
+    display: flex;
+}
+.logo p{
+    font-size: 30px;
+}
+
+
+/*メイン*/
+.explain,
+.title h2:first-child{
+    font-size: 50px;
+} 
+.product p:nth-child(2),
+.product p:nth-child(3),
+.product p:nth-of-type(3),
+.product p:nth-of-type(6),
+.product p:nth-of-type(7),
+#top p:nth-of-type(1), 
+#top li,
+.title-explain p {
+    font-size: 30px;
+}
+.product p:nth-of-type(6),
+.product p:nth-of-type(7),
+#top p:nth-of-type(1){
+    margin-top: 40px;
+}
+.product h2:nth-child(4),
+.product h2:nth-child(5){
+    font-size:50px;
+}
+.product p:nth-of-type(4)  {
+    font-size: 30px;
+ width: 50vw;
+ margin-top: 40px;
+}
+.product p:nth-of-type(5) {
+    font-size: 30px;
+ width: 95vw;
+ margin-top: 20px;
+}
+.material li, .caution li {
+    font-size: 30px;
+}
+
+
+
+}
 
 
